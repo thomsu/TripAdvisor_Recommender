@@ -12,7 +12,7 @@ This is the individual project for the data science immersive program at Flatiro
 ### Technologies
 This project is created in Jupyter notebook using mainly:
 * Python version: 3.7.1
-* Beautifulsoup4 version: 4.6.3
+* BeautifulSoup4 version: 4.6.3
 * Requests version: 2.19.1
 * Selenium version: 3.141.0
 * Urllib3 version: 1.24.1
@@ -32,8 +32,10 @@ The files included in this repository are:
 
 *tripadvisor_hotel.txt -- This information of this file is scraped from each individual hotel's Tripadvisor details webpage using process_hotel_details function. It contains more information than Tripadvisor hotel listing by city.
 
+*tripadvisor_hotel.json -- This file contains all hotel details that will be used in the recommender function. It is derived from the tripadvisor_hotel.txt.
+
 *tripadvisor_hotel_review.csv -- This file contains all the users' hotel reviews of hotels from any of the 16 European cities. The process_other_reviews function is used to scrape the details from website.
 
 *tripadvisor_reviewer.csv -- This file contains reviewers information from TripAdvisor's hotel details webpage. Each reviewer is screened so that details of reviewers who have written more than 25 reviews at TripAdvisor are included in this file.
 
-### 
+###
