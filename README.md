@@ -54,8 +54,14 @@ Most of the data did not go through any processing as the data were 'selectively
 
 ### Step Three: Data Exploration
 
+![price by city plot](/images/price_by_city_plot.png)
+
 Although this process does not seem necessary for building a recommender system, having an EDA may reveal some patterns and insights of hotels in the data. There are 4 histograms, each showing a different aspect of the data. One of the most interesting discoveries from these plots is that the nightly rates variation of hotels with the same rating are most distinguished with rating 4.5 and 5. The rates are generally much higher for hotels in this group that have 15 or more deals being offered.  
 
 ### Step Four: Model Building
 
+![benchmark summary](/images/benchmark_summary.png)
+
 Using the Surprise library, a benchmark with 11 different recommender algorithms was created. The top 4 models were then selected and grid searches were performed on one each of them to get the optimum parameters. The second best model, SVD, was ultimately chosen as it is very close to the best, SVDpp, but it is much less expensive.
+
+![grid search summary](/images/grid_search_summary.png)
